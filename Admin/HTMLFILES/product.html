@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Search</title>
+</head>
+<body>
+
+    <h1>Product Search</h1>
+
+    <form id="searchForm">
+        <label for="keyword">Search for products:</label>
+        <input type="text" id="keyword" name="keyword" required>
+        <button type="button" onclick="searchProducts()">Search</button>
+    </form>
+
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="AddItem.html">Add Cars</a>
+
+    </div>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+            .topnav a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                .topnav a:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+
+        #searchForm {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #e0e8f7;
+            border: 1px solid #4d74a3;
+            border-radius: 8px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #4d74a3;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #4d74a3;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4285f4;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #3062a3;
+            }
+
+        #results {
+            margin-top: 20px;
+        }
+    </style>
+
+    <div id="results">
+    </div>
+
+    <script>
+        /*  searchProducts function captures the user's input,
+        sends a request to the server with the search keyword,
+        processes the server's response as JSON,
+        and then calls a function to display the results on the webpage.
+        Any errors that occur during this process are logged to the console.*/
+        function searchProducts() {
+            const keyword = document.getElementById('keyword').value;
+            fetch(`/search/${keyword}`) //request server using api with the keyword
+                .then(response => response.json())
+                .then(data => displayResults(data))
+                .catch(error => console.error('Error:', error));// handle error
+        }
+        /*buyProduct function sends a POST request to the server to perform a purchase operation,
+        handles the server's response (logging a message and updating the UI),
+        and handles any errors that may occur during the process.*/
+
+        function buyProduct(productId, userId) {
+            console.log("Buy button clicked!");
+
+            fetch('/buy', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ userId, productId }), //covert data to json
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data.message);
+                    const successLabel = document.getElementById('successLabel');
+                    successLabel.textContent = 'Done Successfully';
+
+                    setTimeout(() => {
+                        successLabel.textContent = '';
+                    }, 3000);
+                })
+                .catch(error => console.error('Error:', error));
+        }
+
+        function displayResults(results) {
+            const resultsContainer = document.getElementById('results');
+            resultsContainer.innerHTML = ''; //awal shy fade
+
+            if (results.length === 0) {
+                resultsContainer.innerHTML = '<p>No Results Found.</p>';
+            } else {
+                let userId;
+
+                fetch('/user')
+                    .then(response => response.json())
+                    .then(data => {
+                        userId = data.userId;
+                    });
+                const resultList = document.createElement('ul'); //create list for each item
+                results.forEach(product => { // hay kermel ybayno tahet baa3ed l products
+                    const listItem = document.createElement('li');
+                    listItem.textContent = `${product.name}-${product.category} - ${product.cost}`;
+
+                    const buyButton = document.createElement('button'); //create buy button lal products
+
+                    buyButton.textContent = 'Buy';
+
+                    buyButton.addEventListener('click', function (event) {
+                        event.preventDefault();
+
+                        const productId = product.id;
+
+                        buyProduct(productId, userId);
+
+                    });
+
+
+                    listItem.appendChild(buyButton); //appending the buy button to the list
+                    resultList.appendChild(listItem);
+                });
+
+                const successLabel = document.createElement('p'); //create paragraph element for successlabel elemntns
+                successLabel.id = 'successLabel';
+                resultsContainer.appendChild(successLabel);
+
+                resultsContainer.appendChild(resultList);
+
+            }
+        }
+    </script>
+
+</body>
+</html>

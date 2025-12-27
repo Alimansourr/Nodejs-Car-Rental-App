@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Login Page</title>
+    <link href="../CSSFILES/index.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../JSFILES/index.js"></script>
+</head>
+
+
+<body>
+
+    <div id="navwrapper">
+        <div id="navbar">
+            <form action="/login" method="post">
+                <table class="tablewrapper">
+                    <tr>    </tr>
+                    <tr>
+                        <td style="color: #0080ff">UserName</td>
+                        <td>
+                            <input type="text" placeholder="Enter Email" name="username" class="inputtext" required>
+                        </td>
+                        <td style="color: #0080ff">Password</td>
+                        <td>
+                            <input type="password" placeholder="Enter code" name="password" class="inputtext" required>
+                        </td>
+                        <td><button id="buttonlogin">Login</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><div></div></td>
+                        <td><div></div></td>
+                        <td><div></div></td>
+
+                        <td style="color: blue;font-size: 12px;text-underline-position:under;cursor:pointer"><a onclick="document.getElementById('id01').style.display='block'">Don't have an account?sign up</a></td>
+
+                    </tr>
+                </table>
+
+
+
+            </form>
+        </div>
+
+    </div>
+
+
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+
+            <img src="../Images/offer3.jpg" style="width:100%;">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="../Images/offer2.jpg" style="width:100%;">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="../Images/offer1.jpg" style="width:100%; ">
+
+        </div>
+
+    </div>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 5000); // Change image every 2 seconds
+        }
+    </script>
+
+
+
+
+    <!--hay btkhaline bas ekbs 3alayha teje l register page w bhot kamen X button men khelel l times-->
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'"
+              class="close" title="Close Modal">&times;</span>
+
+        <!-- Modal Content -->
+
+        <form class="modal-content animate" action="/adduser" method="post">
+
+
+            <div class="container">
+                <table>
+
+                    <tr>
+                        <td>
+                            <label for="fullname"><b>UserName</b></label>
+                            <input type="text" placeholder="Enter email" name="username" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="password" required>
+                        </td>
+                    </tr>
+                </table>
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+
+
+                <button type="submit" onclick="document.getElementById('id02').style.display='block'">Register</button>
+
+            </div>
+        </form>
+    </div>
+    <div id="id02" class="modalv">
+        <span onclick="document.getElementById('id02').style.display='none'"
+              class="close" title="Close Modal"></span>
+
+
+    </div>
+
+</body>
+</html>
