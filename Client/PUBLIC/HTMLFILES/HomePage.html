@@ -1,0 +1,275 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>HomePage</title>
+    <link href="../CSSFILES/HomePage/HomePage.css" rel="stylesheet" type="text/css">
+    <link href="../CSSFILES/HomePage/Register.css" rel="stylesheet" type="text/css">
+    <link href="../CSSFILES/HomePage/Verify.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../JSFILES/HomePage/Register.js"></script>
+</head>
+
+
+<body>
+    <div id="navwrapper">
+        <div id="navbar">
+            <table class="tablewrapper">
+                <tr>    </tr>
+                <tr>
+                    <td style="color: #0080ff">Phone Number</td>
+                    <td>
+                        <input type="text" class="inputtext">
+                    </td>
+                    <td style="color: #0080ff">Password</td>
+                    <td>
+                        <input type="password" class="inputtext">
+                    </td>
+                    <td><button id="buttonlogin">Login</button></td>
+                </tr>
+
+                <tr>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <!--<td><button id="buttonlogin"  style="background-color:#f2f2f2;color: #0080ff;border-color:white" onclick="document.getElementById('id01').style.display='block'">Register</button></td>-->
+                    <td style="color: blue;font-size: 12px;text-underline-position:below;cursor:pointer"><a onclick="document.getElementById('id01').style.display='block'">Don't have an account?sign up</a></td>
+
+                </tr>
+            </table>
+
+
+            <h1 class="logowrapper">Car Rental</h1>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <div class="topnav">
+        <a class="active" href="HomePage.html">Home</a>
+        <a href="OurCars.html">Our Cars</a>
+        <a href="Contactus.html">Contact us</a>
+    </div>
+
+
+
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+
+            <img src="../Images/HomePage/offer3.jpg" style="width:100%;">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="../Images/HomePage/offer2.jpg" style="width:100%;">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="../Images/HomePage/offer1.jpg" style="width:100%; ">
+
+        </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+    </script>
+    <!--end of slide show-->
+    <!--
+    <div  class="searchbar">
+        <table>
+        <tr>
+            <td class="row1">From</td><td><input type="datetime-local"></td>
+            <td class="row1">To</td><td><input type="datetime-local"></td>
+        </tr>
+        <tr>
+            <td class="row1">Type</td><td><input type="text"></td>
+            <td class="row1">Doors</td>
+            <td>
+                <select>
+                    <option value="2doors">2</option>
+                    <option value="4doors">4</option>
+                </select>
+            </td>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    <td><button class="buttonsearch"><span>Reserve Now</span></button></td>
+    </tr>
+    </table>
+    --->
+    <h4 style="font-weight: bold;text-align: center;padding-top:30px;padding-bottom:0; font-size: 22px;color: #0080ff">Reserve Now:</h4>
+    <div class="searchbar">
+        <!--
+            <table>
+            <tr>
+                <td class="row1">From</td><td><input type="datetime-local"></td>
+                <td class="row1">To</td><td><input type="datetime-local"></td>
+            </tr>
+            <tr>
+                <td class="row1">Type</td><td><input type="text"></td>
+                <td class="row1">Doors</td>
+                <td>
+                    <select>
+                        <option value="2doors">2</option>
+                        <option value="4doors">4</option>
+                    </select>
+                </td>
+            </tr>
+            </table>
+        -->
+        <div class="s-up">
+
+            <div class="s-up-1">
+                From&nbsp;<input type="datetime-local">
+            </div>
+            <div class="s-up-2">
+                &nbsp;&nbsp;To&nbsp;<input type="datetime-local">
+            </div>
+        </div>
+        <div class="s-bottom">
+            <div class="s-bottom-1">
+                Type&nbsp;<input class="input-type">
+            </div>
+            <div class="s-bottom-2">
+                &nbsp;&nbsp;Doors&nbsp;
+                <select>
+                    <option value="2doors">2</option>
+                    <option value="4doors">4</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <div class="reserve-div">
+            <button class="buttonsearch"><span>Reserve Now</span></button>
+        </div>
+    </div>
+
+
+    <div align="right" class="footer">
+        <a href="https://www.facebook.com/profile.php?id=100091499262545&mibextid=kFxxJD">
+            <img src="../Images/HomePage/fblogo.png" style="height:40px" alt="fb Logo">
+        </a>
+        <a href="https://instagram.com/aliimansourr_?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr">
+            <img src="../Images/HomePage/instalogo.png" style="height:40px" alt="insta Logo">
+        </a>
+    </div>
+
+
+
+
+
+
+
+
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'"
+              class="close" title="Close Modal">&times;</span>
+
+        <!-- Modal Content -->
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+                <img src="../Images/HomePage/profile.png" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="numb"><b>Number</b></label>
+                            <input type="text" placeholder="Enter Number" name="numb" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="fullname"><b>FullName</b></label>
+                            <input type="text" placeholder="Enter FullName" name="fullname" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="dob"><b>DOB</b></label>
+                            <input type="text" placeholder="Enter DOB" name="dob" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="address"><b>Address</b></label>
+                            <input type="text" placeholder="Enter Address" name="address" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+                        </td>
+                    </tr>
+                </table>
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+
+
+                <button onclick="document.getElementById('id02').style.display='block'">Register</button>
+
+            </div>
+        </form>
+    </div>
+    <div id="id02" class="modalv">
+        <span onclick="document.getElementById('id02').style.display='none'"
+              class="close" title="Close Modal">&times;</span>
+
+        <!-- Modal Content -->
+        <form class="modalv-content animate" action="HomePage.html">
+
+
+            <div class="container">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="verif"><b>Please enter verification code</b></label>
+                            <input type="text" placeholder="Enter code" name="verif" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button href="HomePage.html" class="button">Enter</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

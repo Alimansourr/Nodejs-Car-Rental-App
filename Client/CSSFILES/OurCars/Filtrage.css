@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.space {
+    height: 60px;
+    width: 100%;
+}
+
+/* Center website */
+.main {
+    max-width: 80%;
+    margin: auto;
+}
+
+
+
+.row {
+    margin: 8px -16px;
+}
+
+    /* Add padding BETWEEN each column (if you want) */
+    .row,
+    .row > .column {
+        padding: 8px;
+    }
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+.Reservebtn {
+    width: auto;
+    padding: 10px 20px;
+    background-color: #0080ff;
+    color: #fff;
+}
+
+#loadMore {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+    #loadMore a {
+        background: #0080ff;
+        border-radius: 3px;
+        color: white;
+        display: inline-block;
+        padding: 10px 30px;
+        transition: all 0.25s ease-out;
+        -webkit-font-smoothing: antialiased;
+    }
+
+        #loadMore a:hover {
+            background-color: #042a63;
+        }
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}

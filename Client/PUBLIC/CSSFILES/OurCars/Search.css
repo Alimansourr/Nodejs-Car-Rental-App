@@ -1,0 +1,26 @@
+/* CSS Document */
+* {
+    box-sizing: border-box;
+}
+
+/* Style the search field */
+.has-search {
+    float: inherit;
+}
+
+    .has-search .form-s2 {
+        padding-left: 2.375rem;
+        width: 25%;
+    }
+
+    .has-search .form-s2-feedback {
+        position: absolute;
+        z-index: 2;
+        display: block;
+        width: 2.375rem;
+        height: 2.375rem;
+        line-height: 2.375rem;
+        text-align: center;
+        pointer-events: none;
+        color: #aaa;
+    }

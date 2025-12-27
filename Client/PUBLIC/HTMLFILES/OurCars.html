@@ -1,0 +1,893 @@
+<!doctype html>
+<html>
+<link href="../CSSFILES/HomePage/HomePage.css" rel="stylesheet" type="text/css">
+<link href="../CSSFILES/HomePage/Register.css" rel="stylesheet" type="text/css">
+<link href="../CSSFILES/HomePage/Verify.css" rel="stylesheet" type="text/css">
+<link href="../CSSFILES/OurCars/Filtrage.css" rel="stylesheet" type="text/css">
+<link href="../CSSFILES/OurCars/Search.css" rel="stylesheet" type="text/css">
+<link href="../CSSFILES/OurCars/Reserve.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="../JSFILES/OurCars/Filtrage.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../JSFILES/OurCars/Loadmore.js"></script>
+<head>
+    <meta charset="utf-8">
+    <title>Our Cars</title>
+</head>
+
+<body>
+    <div id="navwrapper">
+        <div id="navbar">
+            <table class="tablewrapper">
+                <tr>    </tr>
+                <tr>
+                    <td style="color: #0080ff">Phone Number</td>
+                    <td>
+                        <input type="text" class="inputtext">
+                    </td>
+                    <td style="color: #0080ff">Password</td>
+                    <td>
+                        <input type="text" class="inputtext">
+                    </td>
+                    <td><button id="buttonlogin">Login</button></td></td>
+                </tr>
+
+                <tr>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+
+                    <td style="color: blue;font-size: 12px;text-underline-position:below;cursor:pointer"><a onclick="document.getElementById('id01').style.display='block'">Don't have an account?sign up</a></td>
+                </tr>
+            </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <h1 class="logowrapper">Car Rental</h1>
+        </div>
+    </div>
+
+
+    <div class="topnav">
+        <a href="HomePage.html">Home</a>
+        <a class="active" href="OurCars.html">Our Cars</a>
+        <a href="Contactus.html">Contact us</a>
+    </div>
+    <div class="space"></div>
+
+
+
+    <div class="main">
+
+        <!-- Load icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- The form -->
+        <div class="form-s1 has-search">
+            <span class="fa fa-search form-s2-feedback"></span>
+            <input type="text" class="form-s2" placeholder="Search">
+        </div>
+
+        <hr>
+
+        <h2>Luxury cars</h2>
+
+
+
+
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+            <div class="column">
+                <div class="content">
+                    <img src="../Images/OurCars/GT-S.png" alt="Mountains" style="width:100%">
+                    <h3>Mercedes GT-S</h3>
+                    <p>200$/day</p>
+                    <button class="Reservebtn" onclick="document.getElementById('id03').style.display='block'">Reserve</button>
+                    <button class="Reservebtn" onclick="document.getElementById('id04').style.display='block'">Order</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <img src="../Images/OurCars/MercedesS500.jpg" alt="Lights" style="width:100%">
+                    <h3>Mercedes S500</h3>
+                    <p>180$/day</p>
+                    <button class="Reservebtn" onclick="document.getElementById('id11').style.display='block'">Reserve</button>
+                    <button class="Reservebtn" onclick="document.getElementById('id12').style.display='block'">Order</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <img src="../Images/OurCars/MercedesG.png" alt="Nature" style="width:100%">
+                    <h3>Mercedes G63</h3>
+                    <p>300$/day</p>
+                    <button class="Reservebtn" onclick="document.getElementById('id21').style.display='block'">Reserve</button>
+                    <button class="Reservebtn" onclick="document.getElementById('id22').style.display='block'">Order</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <img src="../Images/OurCars/GLEamg.jpg" alt="Mountains" style="width:100%">
+                    <h3>Mercedes GLE AMG</h3>
+                    <p>230$/day</p>
+                    <button class="Reservebtn" onclick="document.getElementById('id31').style.display='block'">Reserve</button>
+                    <button class="Reservebtn" onclick="document.getElementById('id32').style.display='block'">Order</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="content">
+            <img src="../Images/OurCars/sls.jpg" alt="Bear" style="width:100%">
+            <h3>Merecedes SLS</h3>
+            <p>330$/day</p>
+            <button class="Reservebtn" onclick="document.getElementById('id03').style.display='block'">Reserve</button>
+            <button class="Reservebtn" onclick="document.getElementById('id04').style.display='block'">Order</button>
+        </div>
+
+
+        <div class="row">
+            <div class="column">
+                <div class="content">
+                    <img src="../Images/OurCars/bmw645.jpg" alt="Mountains" style="width:100%">
+                    <h3>BMW 645i</h3>
+                    <p>200$/day</p>
+                    <button class="Reservebtn" onclick="document.getElementById('id03').style.display='block'">Reserve</button>
+                    <button class="Reservebtn" onclick="document.getElementById('id04').style.display='block'">Order</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <img src="../Images/OurCars/x6.jpg" alt="Lights" style="width:100%">
+                    <h3>BMW X6</h3>
+                    <p>150$/day</p>
+                    <button class="Reservebtn" onclick="document.getElementById('id03').style.display='block'">Reserve</button>
+                    <button class="Reservebtn" onclick="document.getElementById('id04').style.display='block'">Order</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <img src="../Images/OurCars/430i.jpeg" alt="Nature" style="width:100%">
+                    <h3>BMW 430i</h3>
+                    <p>300$/day</p>
+                    <button class="Reservebtn" onclick="document.getElementById('id03').style.display='block'">Reserve</button>
+                    <button class="Reservebtn" onclick="document.getElementById('id04').style.display='block'">Order</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <img src="../Images/OurCars/i8.jpg" alt="Mountains" style="width:100%">
+                    <h3>BMW i8</h3>
+                    <p>450$/day</p>
+                    <button class="Reservebtn" onclick="document.getElementById('id03').style.display='block'">Reserve</button>
+                    <button class="Reservebtn" onclick="document.getElementById('id04').style.display='block'">Order</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="content ">
+            <img src="../Images/OurCars/ferrari.jpg" alt="Bear" style="width:100%">
+            <h3>The most powerful car</h3>
+            <h3>Ferrari 458 Italia</h3>
+            <p>299$/day</p>
+            <button class="Reservebtn" onclick="document.getElementById('id03').style.display='block'">Reserve</button>
+            <button class="Reservebtn" onclick="document.getElementById('id04').style.display='block'">Order</button>
+        </div>
+
+
+
+        <div class="row">
+            <div class="column">
+                <div class="content" style="display: none;">
+                    <img src="../Images/OurCars/lambo.jpg" alt="Mountains" style="width:100%">
+                    <h3>Lamb Aventador</h3>
+                    <p>500$/day</p>
+                    <button class="Reservebtn" onclick="document.getElementById('id03').style.display='block'">Reserve</button>
+                    <button class="Reservebtn" onclick="document.getElementById('id04').style.display='block'">Order</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content" style="display: none;">
+                    <img src="../Images/OurCars/aston.jpg" alt="Lights" style="width:100%">
+                    <h3>Aston Martin</h3>
+                    <p>450$/day</p>
+                    <button class="Reservebtn" onclick="document.getElementById('id03').style.display='block'">Reserve</button>
+                    <button class="Reservebtn" onclick="document.getElementById('id04').style.display='block'">Order</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content" style="display: none;">
+                    <img src="../Images/OurCars/rangeroversport.png" alt="Nature" style="width:100%">
+                    <h3>Range Rover S</h3>
+                    <p>300$/day</p>
+                    <button class="Reservebtn" onclick="document.getElementById('id03').style.display='block'">Reserve</button>
+                    <button class="Reservebtn" onclick="document.getElementById('id04').style.display='block'">Order</button>
+                </div>
+            </div>
+            <div class="column">
+
+            </div>
+        </div>
+
+        <hr>
+
+
+        <div class="content " style="display: none;">
+            <h2>Casual cars</h2>
+            <img src="../Images/OurCars/micra.jpg" alt="Bear" style="width:100%">
+            <h3>Our new Micra</h3>
+            <p>20$/day</p>
+            <button class="Reservebtn" onclick="document.getElementById('id03').style.display='block'">Reserve</button>
+            <button class="Reservebtn" onclick="document.getElementById('id04').style.display='block'">Order</button>
+        </div>
+
+
+        <div class="row">
+            <div class="column">
+                <div class="content" style="display: none;">
+                    <img src="../Images/OurCars/Rio.jpg" alt="Mountains" style="width:100%">
+                    <h3>Kia Rio</h3>
+                    <p>20$/day</p>
+                    <button class="Reservebtn" onclick="document.getElementById('id03').style.display='block'">Reserve</button>
+                    <button class="Reservebtn" onclick="document.getElementById('id04').style.display='block'">Order</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content" style="display: none;">
+                    <img src="../Images/OurCars/picanto.jpg" alt="Mountains" style="width:100%">
+                    <h3>Kia picanto</h3>
+                    <p>15$/day</p>
+                    <button class="Reservebtn" onclick="document.getElementById('id03').style.display='block'">Reserve</button>
+                    <button class="Reservebtn" onclick="document.getElementById('id04').style.display='block'">Order</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content" style="display: none;">
+                    <img src="../Images/OurCars/sunny.jpg" alt="Lights" style="width:100%">
+                    <h3>Nissan Sunny</h3>
+                    <p>25$/day</p>
+                    <button class="Reservebtn" onclick="document.getElementById('id03').style.display='block'">Reserve</button>
+                    <button class="Reservebtn" onclick="document.getElementById('id04').style.display='block'">Order</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content" style="display: none;">
+                    <img src="../Images/OurCars/i10.jpg" alt="Nature" style="width:100%">
+                    <h3>Hyundai i10</h3>
+                    <p>10$/day.</p>
+                    <button class="Reservebtn" onclick="document.getElementById('id03').style.display='block'">Reserve</button>
+                    <button class="Reservebtn" onclick="document.getElementById('id04').style.display='block'">Order</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="content" style="display: none;">
+                    <img src="../Images/OurCars/hyundai.jpg" alt="Mountains" style="width:100%">
+                    <h3>Hyundai 2019</h3>
+                    <p>90$/day</p>
+                    <button class="Reservebtn" onclick="document.getElementById('id03').style.display='block'">Reserve</button>
+                    <button class="Reservebtn" onclick="document.getElementById('id04').style.display='block'">Order</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content" style="display: none;">
+                    <img src="../Images/OurCars/xtrail.png" alt="Mountains" style="width:100%">
+                    <h3>Nissan Xtrail</h3>
+                    <p>70$/day</p>
+                    <button class="Reservebtn" onclick="document.getElementById('id03').style.display='block'">Reserve</button>
+                    <button class="Reservebtn" onclick="document.getElementById('id04').style.display='block'">Order</button>
+                </div>
+            </div>
+            <div class="column">
+
+            </div>
+            <div class="column">
+
+            </div>
+        </div>
+
+
+
+
+
+
+        <div id="loadMore" style="">
+            <a href="#">Load More</a>
+        </div>
+        <!-- END MAIN -->
+    </div>
+
+
+
+
+
+    <div align="right" class="footer">
+        <a href="https://www.facebook.com/profile.php?id=100091499262545&mibextid=kFxxJD">
+            <img src="../Images/HomePage/fblogo.png" style="height:40px" alt="fb Logo">
+        </a>
+        <a href="https://instagram.com/aliimansourr_?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr">
+            <img src="../Images/HomePage/instalogo.png" style="height:40px" alt="insta Logo">
+        </a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'"
+              class="close" title="Close Modal">&times;</span>
+
+        <!-- Modal Content -->
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+                <img src="../Images/HomePage/profile.png" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="numb"><b>Number</b></label>
+                            <input type="text" placeholder="Enter Number" name="numb" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="fullname"><b>FullName</b></label>
+                            <input type="text" placeholder="Enter FullName" name="fullname" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="dob"><b>DOB</b></label>
+                            <input type="text" placeholder="Enter DOB" name="dob" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="address"><b>Address</b></label>
+                            <input type="text" placeholder="Enter Address" name="address" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+                        </td>
+                    </tr>
+                </table>
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+
+
+                <button onclick="document.getElementById('id02').style.display='block'">Register</button>
+
+            </div>
+        </form>
+    </div>
+
+
+
+    <div id="id03" class="modalres">
+
+        <!-- Modal Content -->
+        <form class="modalres-content animate">
+
+
+            <span onclick="document.getElementById('id03').style.display='none'"
+                  class="closer" title="Close Modal">&times;</span>
+            <div class="containerres">
+                <div style="width: 50%;height: 100%;float:right; font-weight: bold">
+                    200$
+                    <div style="width: 100%;height: 80%; float:right">
+                        <img src="../Images/OurCars/GT-S.png" alt="Mountains" style="width:100%">
+                    </div>
+                </div>
+                <table>
+                    <tr><td style="font-weight: bold;padding-bottom: 30px">Reserving:</td></tr>
+                    <tr>
+                        <td class="row1">From</td>
+                        <td><input type="datetime-local"></td>
+                    </tr>
+                    <tr>
+                        <td class="row1">To</td>
+                        <td><input type="datetime-local"></td>
+                    </tr>
+                    <tr>
+                        <td class="row1">Available Colors</td>
+                        <td>
+                            <select>
+                                <option value="Red">White</option>
+                                <option value="Black">Black</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="row1">Doors</td>
+                        <td>
+                            <select>
+                                <option value="2doors">2</option>
+                                <option value="4doors">4</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>
+                        </td>
+                        <td><button onclick="document.getElementById('id03').style.display='none';document.getElementById('id05').style.display='block'" class="btnres">Reserve</button></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>
+
+
+
+
+    <div id="id04" class="modalres">
+
+
+        <!-- Modal Content -->
+        <form class="modalres-content animate">
+            <span onclick="document.getElementById('id04').style.display='none'"
+                  class="closer" title="Close Modal">&times;</span>
+            <div class="containerres">
+                <div style="width: 50%;height: 20%;float:right; font-weight: bold">
+                    200$
+                    <div style="width: 100%;height: 80%; float:right">
+                        <img src="../Images/OurCars/GT-S.png" alt="Mountains" style="width:100%">
+                    </div>
+                </div>
+                <table>
+
+                    <tr><td style="font-weight: bold">Ordering:</td></tr>
+                    <tr>
+                        <td class="row1">From</td>
+                        <td><input type="datetime-local"></td>
+                    </tr>
+                    <tr>
+                        <td class="row1">To</td>
+                        <td><input type="datetime-local"></td>
+                    </tr>
+                    <tr>
+                        <td class="row1">Address</td>
+                        <td><input type="text"></td>
+
+                    </tr>
+                    <tr>
+                        <td class="row1">Available Colors</td>
+                        <td>
+                            <select>
+                                <option value="Red">White</option>
+                                <option value="Black">Black</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="row1">Doors</td>
+                        <td>
+                            <select>
+                                <option value="2doors">2</option>
+                                <option value="4doors">4</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <button onclick="document.getElementById('id04').style.display='none'" class="cancelbtn">Cancel</button>
+                        </td>
+                        <td><button onclick="document.getElementById('id04').style.display='none';document.getElementById('id06').style.display='block'" class="btnres">Order</button></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>
+    <div id="id02" class="modalv">
+
+
+        <!-- Modal Content -->
+        <form class="modalv-content animate" action="OurCars.html">
+
+
+            <div class="containerv">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="verif"><b>Please enter verification code</b></label>
+                            <input type="text" placeholder="Enter code" name="verif" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button href="OurCars.html" class="button">Enter</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>
+
+
+
+
+    <div id="id11" class="modalres">
+
+        <!-- Modal Content -->
+        <form class="modalres-content animate">
+
+
+            <span onclick="document.getElementById('id11').style.display='none'"
+                  class="closer" title="Close Modal">&times;</span>
+            <div class="containerres">
+                <div style="width: 50%;height: 100%;float:right; font-weight: bold">
+                    200$
+                    <div style="width: 100%;height: 80%; float:right">
+                        <img src="../Images/OurCars/mercedesS500.jpg" alt="Mountains" style="width:100%">
+                    </div>
+                </div>
+                <table>
+                    <tr><td style="font-weight: bold;padding-bottom: 30px">Reserving:</td></tr>
+
+                    <tr>
+                        <td class="row1">From</td>
+                        <td><input type="datetime-local"></td>
+                    </tr>
+                    <tr>
+                        <td class="row1">To</td>
+                        <td><input type="datetime-local"></td>
+                    </tr>
+                    <tr>
+                        <td class="row1">Available Colors</td>
+                        <td>
+                            <select>
+                                <option value="Red">White</option>
+                                <option value="Black">Black</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="row1">Doors</td>
+                        <td>
+                            <select>
+                                <option value="2doors">2</option>
+                                <option value="4doors">4</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button onclick="document.getElementById('id11').style.display='none'" class="cancelbtn">Cancel</button>
+                        </td>
+                        <td><button onclick="document.getElementById('id11').style.display='none';document.getElementById('id05').style.display='block'" class="btnres">Reserve</button></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>
+
+
+
+
+    <div id="id12" class="modalres">
+
+
+        <!-- Modal Content -->
+        <form class="modalres-content animate">
+            <span onclick="document.getElementById('id12').style.display='none'"
+                  class="closer" title="Close Modal">&times;</span>
+            <div class="containerres">
+                <div style="width: 50%;height: 20%;float:right; font-weight: bold">
+                    200$
+                    <div style="width: 100%;height: 80%; float:right">
+                        <img src="../Images/OurCars/mercedesS500.jpg" alt="Mountains" style="width:100%">
+                    </div>
+                </div>
+                <table>
+                    <tr><td style="font-weight: bold">Ordering:</td></tr>
+
+                    <tr>
+                        <td class="row1">From</td>
+                        <td><input type="datetime-local"></td>
+                    </tr>
+                    <tr>
+                        <td class="row1">To</td>
+                        <td><input type="datetime-local"></td>
+                    </tr>
+                    <tr>
+                        <td class="row1">Address</td>
+                        <td><input type="text"></td>
+
+                    </tr>
+                    <tr>
+                        <td class="row1">Available Colors</td>
+                        <td>
+                            <select>
+                                <option value="Red">White</option>
+                                <option value="Black">Black</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="row1">Doors</td>
+                        <td>
+                            <select>
+                                <option value="2doors">2</option>
+                                <option value="4doors">4</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button onclick="document.getElementById('id12').style.display='none'" class="cancelbtn">Cancel</button>
+                        </td>
+                        <td><button onclick="document.getElementById('id12').style.display='none';document.getElementById('id06').style.display='block'" class="btnres">Order</button></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>
+    <div id="id21" class="modalres">
+
+        <!-- Modal Content -->
+        <form class="modalres-content animate">
+
+
+            <span onclick="document.getElementById('id21').style.display='none'"
+                  class="closer" title="Close Modal">&times;</span>
+            <div class="containerres">
+                <div style="width: 50%;height: 100%;float:right; font-weight: bold">
+                    200$
+                    <div style="width: 100%;height: 80%; float:right">
+                        <img src="../Images/OurCars/MercedesG.png" alt="Mountains" style="width:100%">
+                    </div>
+                </div>
+                <table>
+                    <tr><td style="font-weight: bold;padding-bottom: 30px">Reserving:</td></tr>
+
+                    <tr>
+                        <td class="row1">From</td>
+                        <td><input type="datetime-local"></td>
+                    </tr>
+                    <tr>
+                        <td class="row1">To</td>
+                        <td><input type="datetime-local"></td>
+                    </tr>
+                    <tr>
+                        <td class="row1">Available Colors</td>
+                        <td>
+                            <select>
+                                <option value="Red">White</option>
+                                <option value="Black">Black</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="row1">Doors</td>
+                        <td>
+                            <select>
+                                <option value="2doors">2</option>
+                                <option value="4doors">4</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button onclick="document.getElementById('id21').style.display='none'" class="cancelbtn">Cancel</button>
+                        </td>
+                        <td><button onclick="document.getElementById('id21').style.display='none';document.getElementById('id05').style.display='block'" class="btnres">Reserve</button></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>
+
+
+
+
+    <div id="id22" class="modalres">
+
+
+        <!-- Modal Content -->
+        <form class="modalres-content animate">
+            <span onclick="document.getElementById('id22').style.display='none'"
+                  class="closer" title="Close Modal">&times;</span>
+            <div class="containerres">
+                <div style="width: 50%;height: 20%;float:right; font-weight: bold">
+                    200$
+                    <div style="width: 100%;height: 80%; float:right">
+                        <img src="../Images/OurCars/MercedesG.png" alt="Mountains" style="width:100%">
+                    </div>
+                </div>
+                <table>
+
+                    <tr><td style="font-weight: bold">Ordering:</td></tr>
+                    <tr>
+                        <td class="row1">From</td>
+                        <td><input type="datetime-local"></td>
+                    </tr>
+                    <tr>
+                        <td class="row1">To</td>
+                        <td><input type="datetime-local"></td>
+                    </tr>
+                    <tr>
+                        <td class="row1">Address</td>
+                        <td><input type="text"></td>
+
+                    </tr>
+                    <tr>
+                        <td class="row1">Available Colors</td>
+                        <td>
+                            <select>
+                                <option value="Red">White</option>
+                                <option value="Black">Black</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="row1">Doors</td>
+                        <td>
+                            <select>
+                                <option value="2doors">2</option>
+                                <option value="4doors">4</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button onclick="document.getElementById('id22').style.display='none'" class="cancelbtn">Cancel</button>
+                        </td>
+                        <td><button onclick="document.getElementById('id22').style.display='none';document.getElementById('id06').style.display='block'" class="btnres">Order</button></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>
+
+    <div id="id31" class="modalres">
+
+        <!-- Modal Content -->
+        <form class="modalres-content animate">
+
+
+            <span onclick="document.getElementById('id31').style.display='none'"
+                  class="closer" title="Close Modal">&times;</span>
+            <div class="containerres">
+                <div style="width: 50%;height: 100%;float:right; font-weight: bold">
+                    200$
+                    <div style="width: 100%;height: 80%; float:right">
+                        <img src="../Images/OurCars/GLEamg.jpg" alt="Mountains" style="width:100%">
+                    </div>
+                </div>
+                <table>
+                    <tr><td style="font-weight: bold;padding-bottom: 30px">Reserving:</td></tr>
+
+                    <tr>
+                        <td class="row1">From</td>
+                        <td><input type="datetime-local"></td>
+                    </tr>
+                    <tr>
+                        <td class="row1">To</td>
+                        <td><input type="datetime-local"></td>
+                    </tr>
+                    <tr>
+                        <td class="row1">Available Colors</td>
+                        <td>
+                            <select>
+                                <option value="Red">White</option>
+                                <option value="Black">Black</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="row1">Doors</td>
+                        <td>
+                            <select>
+                                <option value="2doors">2</option>
+                                <option value="4doors">4</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button onclick="document.getElementById('id31').style.display='none'" class="cancelbtn">Cancel</button>
+                        </td>
+                        <td><button onclick="document.getElementById('id31').style.display='none';document.getElementById('id05').style.display='block'" class="btnres">Reserve</button></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>
+
+
+
+
+    <div id="id32" class="modalres">
+
+
+        <!-- Modal Content -->
+        <form class="modalres-content animate">
+            <span onclick="document.getElementById('id32').style.display='none'"
+                  class="closer" title="Close Modal">&times;</span>
+            <div class="containerres">
+                <div style="width: 50%;height: 20%;float:right; font-weight: bold">
+                    200$
+                    <div style="width: 100%;height: 80%; float:right">
+                        <img src="../Images/OurCars/GLEamg.jpg" alt="Mountains" style="width:100%">
+                    </div>
+                </div>
+                <table>
+                    <tr><td style="font-weight: bold">Ordering:</td></tr>
+
+                    <tr>
+                        <td class="row1">From</td>
+                        <td><input type="datetime-local"></td>
+                    </tr>
+                    <tr>
+                        <td class="row1">To</td>
+                        <td><input type="datetime-local"></td>
+                    </tr>
+                    <tr>
+                        <td class="row1">Address</td>
+                        <td><input type="text"></td>
+
+                    </tr>
+                    <tr>
+                        <td class="row1">Available Colors</td>
+                        <td>
+                            <select>
+                                <option value="Red">White</option>
+                                <option value="Black">Black</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="row1">Doors</td>
+                        <td>
+                            <select>
+                                <option value="2doors">2</option>
+                                <option value="4doors">4</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button onclick="document.getElementById('id32').style.display='none'" class="cancelbtn">Cancel</button>
+                        </td>
+                        <td><button onclick="document.getElementById('id32').style.display='none';document.getElementById('id06').style.display='block'" class="btnres">Order</button></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

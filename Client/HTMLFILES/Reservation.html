@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Confirmation</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffffff; /* Change to white */
+            padding: 20px;
+            margin: 0; /* Remove default margin */
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+            .topnav a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                .topnav a:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+
+        .active {
+            background-color: #4285f4; /* Change to blue */
+            color: white;
+        }
+
+        .confirmation-container {
+            background-color: #ffffff; /* Change to white */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #4285f4; /* Change to blue */
+        }
+
+        p {
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="HomePage.html">Home</a>
+        <a href="OurCars.html">Our Cars</a>
+        <a href="Contactus.html">Contact us</a>
+        <a href="UpdatePassword.html">Update Profile</a>
+        <a href="DeleteProfile.html">Delete Profile</a>
+     
+    </div>
+
+    <div class="confirmation-container">
+        <h1>Reservation Confirmed!</h1>
+    </div>
+
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+
+            <img src="../Images//HomePage/offer3.jpg" style="width:100%;">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="../Images/HomePage/offer2.jpg" style="width:100%;">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="../Images/HomePage/offer1.jpg" style="width:100%; ">
+
+        </div>
+
+    </div>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 5000); // Change image every 2 seconds
+        }
+    </script>
+
+</body>
+
+</html>
+
+
+
+
